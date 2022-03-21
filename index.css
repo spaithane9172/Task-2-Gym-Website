@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url("img/bg.jpg") no-repeat;
+    background-size: 180% 200vh;
+}
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+a{
+    color: white !important;
+    text-decoration: none;
+    background: transparent;
+    font-weight: bold;
+}
+.nav-link{
+    padding: 3vh 1vw;
+}
+.logo{
+    filter: invert(100%);
+    width: 5vw;
+    height: 3vh;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+}
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+.form-container{
+    width: 40vw;
+    height: 60vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    transform: translate(3vw,10vh);
+}
+.form-container h5{
+    text-align: center;
+    margin-bottom: 4vh;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-box input{
+    width: 27vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.active{
+    color: gray !important;
+}
+.input-box input[type=button]{
+   background: black;
+   color: white;
+   font-weight: bold;
+   border: 1px solid white;
+}
+.input-box input[type=button]:hover{
+    background: rgb(63, 49, 49);
+ }
+.input-box input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+@media (max-width:992px) {
+    .outer-input-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+}
+@media (max-width:768px) {
+    .form-container{
+        width: 60vw;
+        height: 65vh;
+    }
+    .form-container h5{
+        font-size: 1.9vw;
+    }
+    .input-box input{
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.7vw;
+    }
+}
+@media (max-width:768px) and (min-width:576px) {
+    .form-container{
+        width: 60vw;
+        height: 65vh;
+    }
+    .form-container h5{
+        font-size: 1.9vw;
+    }
+    .input-box input{
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.7vw;
+    }
+}
+@media (max-width:576px) and (min-width:450px) {
+    .form-container{
+        width: 75vw;
+        height: 70vh;
+    }
+    .form-container h5{
+        font-size: 2.5vw;
+    }
+    .input-box input{
+        width: 50vw;
+        height: 7vh;
+        font-size: 2.3vw;
+    }
+}
+@media (max-width:450px) {
+    .form-container{
+        width: 80vw;
+        height: 60vh;
+    }
+    .form-container h5{
+        font-size: 3.5vw;
+    }
+    .input-box input{
+        width: 60vw;
+        height: 6vh;
+        font-size: 3vw;
+    }
+}
